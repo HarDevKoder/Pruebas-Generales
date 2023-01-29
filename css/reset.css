@@ -7,6 +7,21 @@
 
 /* Fuentes Personalizadas */
 @font-face{
+  font-family: arial; 
+  src: url(/fonts/arial.ttf);
+}
+
+@font-face{
+  font-family: avenir; 
+  src: url(/fonts/avenir.ttf);
+}
+
+@font-face{
+  font-family: calibri; 
+  src: url(/fonts/calibri.ttf);
+}
+
+@font-face{
   font-family: helvetica; 
   src: url(/fonts/helvetica.ttf);
 }
@@ -26,20 +41,8 @@
   src: url(/fonts/roboto.ttf);
 }
 
-@font-face{
-  font-family: calibri; 
-  src: url(/fonts/calibri.ttf);
+/* Fondo de pagina por defecto */
+body{
+  background-color: azure;
 }
-
-@font-face{
-  font-family: avenir; 
-  src: url(/fonts/avenir.ttf);
-}
-
-@font-face{
-  font-family: arial; 
-  src: url(/fonts/arial.ttf);
-}
-
-/*  */
 
