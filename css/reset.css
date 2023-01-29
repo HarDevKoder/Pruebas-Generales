@@ -1,0 +1,45 @@
+/* Reset General */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fuentes Personalizadas */
+@font-face{
+  font-family: helvetica; 
+  src: url(/fonts/helvetica.ttf);
+}
+
+@font-face {
+  font-family: montserrat; 
+  src: url(/fonts/montserrat.ttf);
+}
+
+@font-face{
+  font-family: openSans; 
+  src: url(/fonts/openSans.ttf);
+}
+
+@font-face{
+  font-family: roboto; 
+  src: url(/fonts/roboto.ttf);
+}
+
+@font-face{
+  font-family: calibri; 
+  src: url(/fonts/calibri.ttf);
+}
+
+@font-face{
+  font-family: avenir; 
+  src: url(/fonts/avenir.ttf);
+}
+
+@font-face{
+  font-family: arial; 
+  src: url(/fonts/arial.ttf);
+}
+
+/*  */
+
