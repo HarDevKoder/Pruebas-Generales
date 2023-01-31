@@ -1,5 +1,11 @@
 // ----------------------------------------------------------------
-// 1. Eliminar Cache
+// 1. Mensaje de prueba
+// ----------------------------------------------------------------
+function mensajePrueba(mensaje){
+  alert(mensaje);
+}
+// ----------------------------------------------------------------
+// 2. Eliminar Cache
 // ----------------------------------------------------------------
 function clearCache() {
   let links = document.getElementsByTagName("link");
@@ -15,7 +21,7 @@ function clearCache() {
 // llamada al ejecutar un evento
 // document.getElementById("myButton").addEventListener("click", clearCache);
 // ----------------------------------------------------------------
-// 2. Mensaje SweetAlert
+// 3. Mensaje SweetAlert
 // ----------------------------------------------------------------
 function mensajeSweetAlert(icon, title, text, timer){
   Swal.fire({
@@ -37,12 +43,11 @@ function mensajeSweetAlert(icon, title, text, timer){
 // Mensaje de Exito
 // mensajeSweetAlert('success', `${nombre} ${apellido}`, `Tienes ${edad} Años de Edad` , 2000);
 // ----------------------------------------------------------------
-// 3. Borrar Campos de formulario
+// 4. Borrar Campos de formulario
 // ----------------------------------------------------------------
 function resetForm() {
   document.getElementById("formulario").reset();
 }
-// llamada a la funcion
 // llamada de la funcion
 // formulario.addEventListener('submit', function(e){
 //   // Evito el envio instantaneo y que no se muestre el mensaje

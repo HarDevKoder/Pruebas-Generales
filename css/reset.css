@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  vertical-align: baseline; /*Alinea texto con borde inferior de imagen*/
 }
 
 /* Fuentes Personalizadas */
@@ -41,8 +42,93 @@
   src: url(/fonts/roboto.ttf);
 }
 
-/* Fondo de pagina por defecto */
+/* Configuracion por defecto */
 body{
-  background-color: azure;
+  background-color: azure; /*Fondo por defecto*/
+  font-family:calibri;       /*Tipografia por defecto*/
+  border: 1px solid red;
+  min-height: 100vh;         /*ocupa todo el alto de la pantalla*/
+  font-size: 100%;      /*se respeta Tamaño de fuente cofigurado x el usuario*/
+  line-height: 1.4em;        /*Interlineado aconsejado por defecto*/
+  font-smooth: always;  /*suaviza o mejora la Tipografia*/
+  /* opcional */
+  -webkit-font-smoothing: antialiased;
+  /* opcional */
+  -moz-osx-font-smoothing: grayscale;
+
 }
 
+/* Evitamos problemas con las imagenes */
+img, picture, video, iframe, figure{
+  max-width: 100%;   /*no ocupar mas del ancho contenedor o ventana*/
+  width: 100%;       /*ocupar ancho total contenedor*/
+  display: block;    /*Elimina espacio entre imagenes y videos*/
+  object-fit: cover; /*si se colocan alturas(no hacerlo), se adapte*/
+  object-position: center center; /*centrar objetos*/
+}
+
+/* Enlaces */
+a{
+  display: block; /*enlaces como cajas*/
+
+}
+
+/*Enlaces dentro de Parrafos*/
+p a{
+  display: inline;
+}
+
+/* Quitamos los puntos de los <li> */
+li {
+  list-style-type: none;
+}
+
+/* Configuramos anclas suaves efecto Smooth */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Desactivamos estilos por defecto de las principales etiquetas de texto */
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+  font-size: 1em;         /*tamaño igual al configurado en el body*/
+  font-weight: inherit;   /*enfasis del texto por defecto para todo*/
+  font-style: inherit;    /*Desactivamos los estilos de texto*/ 
+  text-decoration: none;  /*Eliminar Subrayado de Enlaces*/
+  color: inherit;         /*Desactivar colores pej. de enlaces*/
+}
+
+/* Configuramos el texto que seleccionamos */
+::selection {
+  background-color:black; /*color de fondo*/
+  color: white;           /*color de texto*/
+}
+
+/* Formularios */
+form, input, textarea, select, label {
+  font-family: inherit; /*Tipografia heredada del body(Calibri)*/
+  font-size: inherit;   /*Tamaño Heredado e igual*/
+  background-color: transparent; /*Fondo Transparente*/
+  color: inherit;       /*Color de texto heredado*/
+  display: block; /*Elimina espacio entre elementos y los coloca vertical*/
+  margin-bottom: 5px;   /*Espacio Inferior*/
+}
+
+/*Formato para los botones y los submits*/
+button, input[type='submit']{ /*Botones de Envio*/
+  background-color:transparent; /*Fondo Transparente*/
+  color: black;               /*Color Texto*/
+  padding: 5px 30px 5px 30px;   /*Tamaño*/
+  border: 1px solid black;    /*Borde*/
+  border-radius: 15px;          /*Esquinas Redondeadas*/
+  font-size: 1.3em;             /*Tamaño Texto*/
+  font-weight: 600;             /*Peso o Enfasis del texto*/
+  margin-bottom: 5px;           /*Espaciado Inferior*/
+}
+
+/* Reseteamos las tablas */
+table, tr, td {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid black;
+  padding: 10px;
+}
