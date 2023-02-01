@@ -6,6 +6,26 @@
   vertical-align: baseline; /*Alinea texto con borde inferior de imagen*/
 }
 
+html{
+  font-size: 100%;
+}
+
+/* Configuracion por defecto */
+body{
+  background-color: azure; /*Fondo por defecto*/
+  font-family:calibri;       /*Tipografia por defecto*/
+  border: 1px solid red;
+  min-height: 100vh;         /*ocupa todo el alto de la pantalla*/
+  font-size: 100%;      /*se respeta Tamaño de fuente cofigurado x el usuario*/
+  line-height: 1.4em;        /*Interlineado aconsejado por defecto*/
+  font-smooth: always;  /*suaviza o mejora la Tipografia*/
+  /* opcional */
+  -webkit-font-smoothing: antialiased;
+  /* opcional */
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
 /* Fuentes Personalizadas */
 @font-face{
   font-family: arial; 

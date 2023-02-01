@@ -1,0 +1,22 @@
+.tituloGeneral{
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 1.2rem;
+}
+
+.contenedora{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.em {
+  width: fit-content;
+  background: lightblue;
+  padding: 1Rem 2Rem;
+  margin: 2Rem;
+  border-radius: 1.5Rem;
+  font-size: 1.5em;
+}
